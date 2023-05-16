@@ -24,3 +24,35 @@ nav {
   max-width: 600px;
   align-self: center;
 }
+
+.card{
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.grey{
+  color: #918E9B;
+}
+
+.card-image-container{
+  position: relative;
+
+}
+
+.card-box{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color: wheat;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.card-img-katie{
+  width: 20vw;
+}
+
+.card-img-star{
+  height: 20px;
+}
