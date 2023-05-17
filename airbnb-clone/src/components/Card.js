@@ -4,8 +4,8 @@ function Card(props) {
   return (
       <section className="card">
         <div className="card-image-container">
-          <img className="card-img" src={props.img} alt="Katie" />
-        <div className="card-box">{props.spots==0? "Sold out" : "Open spots: "+props.spots}</div>
+          <img className="card-img" src={props.coverImg} alt="Katie" />
+        <div className="card-box">{props.openSpots==0? "Sold out" : "Open spots: "+props.openSpots}</div>
         </div>
         <div className="card-status">
           <img
@@ -14,7 +14,7 @@ function Card(props) {
             alt="Star"
           />
           <span className="grey">
-            ({props.status.rating}) • {props.status.reviewCount} •{" "}
+            ({props.stats.rating}) • {props.stats.reviewCount} •{" "}
           </span>
           <span className="grey">{props.location}</span>
         </div>
