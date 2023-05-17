@@ -5,7 +5,7 @@ function Card(props) {
       <section className="card">
         <div className="card-image-container">
           <img className="card-img" src={props.img} alt="Katie" />
-          <div className="card-box">Sold out</div>
+        <div className="card-box">{props.spots==0? "Sold out" : "Open spots: "+props.spots}</div>
         </div>
         <div className="card-status">
           <img
@@ -18,9 +18,9 @@ function Card(props) {
           </span>
           <span className="grey">{props.location}</span>
         </div>
-        <p className="card-describe">Learn lessons with Katie</p>
-        <p className="card-price">From $40</p>
-        <p className="card-price-2">/ person</p>
+      <p className="card-title">{props.title}</p>
+        <p className="card-price"><span className="card-bold">From {props.price}$</span> / person</p>
+        
       </section>
   );
 }

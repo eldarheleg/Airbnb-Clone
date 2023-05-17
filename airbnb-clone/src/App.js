@@ -7,7 +7,7 @@ import data from "./data";
 function App() {
   let newData = data.map((single) => {
     return (
-      <Card id={single.id} img={single.coverImg} status={single.stats} location={single.location} />
+      <Card key={single.id} img={single.coverImg} status={single.stats} location={single.location} title={single.title} price={single.price} spots={single.openSpots} />
     )
   })
   return (
